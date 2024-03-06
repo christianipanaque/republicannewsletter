@@ -181,6 +181,7 @@ body.indexfb .main {
 
   .main .form {
     margin: auto;
+    flex-wrap: wrap;
   }
 }
 
@@ -246,6 +247,7 @@ h2 {
   background-color: rgb(255, 255, 255);
   display: block;
   font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1.5rem;
   padding: 0.75rem 1.25rem;
   color: rgb(0, 0, 0);
@@ -256,6 +258,13 @@ h2 {
 .form input:focus {
   border: 2px solid #b00325;
   border-radius: 6px 0px 0px 6px;
+}
+
+@media (max-width: 900px) {
+  .form input {
+    border-radius: 6px 6px 0px 0px;
+    text-align: center;
+  }
 }
 
 .form .button-red {
@@ -279,6 +288,14 @@ h2 {
   border-radius: 0px 6px 6px 0px;
   padding: 0.9rem 1rem;
   border: 1px solid #b00325;
+}
+
+@media (max-width: 900px) {
+  .form .button-red {
+    width: 100%;
+    border-radius: 0px 0px 6px 6px;
+    text-align: center;
+  }
 }
 
 .footer {
